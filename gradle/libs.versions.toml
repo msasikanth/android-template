@@ -1,0 +1,31 @@
+[versions]
+compose = "1.0.4"
+
+[libraries]
+android-gradle = "com.android.tools.build:gradle:7.0.3"
+
+androidx-junit = "androidx.test.ext:junit:1.1.3"
+
+appcompat = "androidx.appcompat:appcompat:1.3.1"
+
+compose-activity = "androidx.activity:activity-compose:1.3.1"
+compose-material = { module = "androidx.compose.material:material", version.ref = "compose" }
+compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+compose-ui-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+compose-ui-test = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+
+core = "androidx.core:core-ktx:1.6.0"
+
+espresso = "androidx.test.espresso:espresso-core:3.4.0"
+
+junit = "junit:junit:4.13.2"
+
+kotlin-gradle = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31"
+
+lifecycle-runtime = "androidx.lifecycle:lifecycle-runtime-ktx:2.3.1"
+
+material = "com.google.android.material:material:1.4.0"
+
+[bundles]
+compose = ["compose-activity", "compose-ui", "compose-ui-preview", "compose-material"]
