@@ -5,5 +5,7 @@ dependencyResolutionManagement {
     mavenCentral()
   }
 }
+
 rootProject.name = "Android Template"
-include ':app'
+
+include(":app")
