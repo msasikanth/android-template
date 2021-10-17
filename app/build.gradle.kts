@@ -48,11 +48,13 @@ dependencies {
 
   implementation(libs.appcompat)
   implementation(libs.bundles.compose)
+  implementation(libs.bundles.mobius)
   implementation(libs.core)
   implementation(libs.lifecycle.runtime)
   implementation(libs.material)
 
   testImplementation(libs.junit)
+  testImplementation(libs.mobius.test)
 
   androidTestImplementation(libs.androidx.junit)
   androidTestImplementation(libs.compose.ui.test)

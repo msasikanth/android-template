@@ -1,6 +1,8 @@
 [versions]
 compose = "1.0.4"
 
+mobius = "1.5.5"
+
 [libraries]
 android-gradle = "com.android.tools.build:gradle:7.0.3"
 
@@ -27,5 +29,12 @@ lifecycle-runtime = "androidx.lifecycle:lifecycle-runtime-ktx:2.3.1"
 
 material = "com.google.android.material:material:1.4.0"
 
+mobius-android = { module = "com.spotify.mobius:mobius-android", version.ref = "mobius" }
+mobius-core = { module = "com.spotify.mobius:mobius-core", version.ref = "mobius" }
+mobius-extras = { module = "com.spotify.mobius:mobius-extras", version.ref = "mobius" }
+mobius-rx2 = { module = "com.spotify.mobius:mobius-rx2", version.ref = "mobius" }
+mobius-test = { module = "com.spotify.mobius:mobius-test", version.ref = "mobius" }
+
 [bundles]
 compose = ["compose-activity", "compose-ui", "compose-ui-preview", "compose-material"]
+mobius = ["mobius-android", "mobius-core", "mobius-extras", "mobius-rx2"]
